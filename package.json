@@ -1,0 +1,53 @@
+{
+  "name": "tracker-lib",
+  "version": "0.1.0",
+  "description": "Polyend Tracker Library",
+  "keywords": [
+    "polyend",
+    "polyend-tracker",
+    "polyend-tracker-mini",
+    "polyend-tracker-plus",
+    "tracker-mini",
+    "tracker-plus",
+    "music-tracker",
+    "music-production",
+    "tracker-library",
+    "mt-file",
+    "mtp-file",
+    "audio"
+  ],
+  "author": "Sandro 'Sandroid' Ducceschi <sandro@polyend.com>",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "format": "prettier --write src/",
+    "formatting": "prettier --check src/",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run formatting && npm run typecheck",
+    "docs": "npx typedoc"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "jszip": "^3.10.1",
+    "prettier": "^3.5.1",
+    "typedoc": "^0.28.19",
+    "typedoc-plugin-mdn-links": "^5.1.1",
+    "typedoc-plugin-rename-defaults": "^0.7.3",
+    "typescript": "^5.9.2"
+  }
+}

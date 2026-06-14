@@ -1,0 +1,10 @@
+.vscode
+.idea
+.DS_Store
+.env
+*.iml
+*.map
+node_modules
+dist
+docs
+testfiles
