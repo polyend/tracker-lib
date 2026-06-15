@@ -1,7 +1,10 @@
 {
-  "name": "tracker-lib",
+  "name": "@polyend/tracker-lib",
   "version": "0.1.0",
   "description": "Polyend Tracker Library",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "polyend",
     "polyend-tracker",
