@@ -1,7 +1,13 @@
 {
   "name": "@polyend/tracker-lib",
-  "version": "0.1.1",
   "description": "Polyend Tracker Library",
+  "author": "Sandro 'Sandroid' Ducceschi <sandro@polyend.com>",
+  "license": "MIT",
+  "version": "0.1.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polyend/tracker-lib.git"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -19,8 +25,6 @@
     "mtp-file",
     "audio"
   ],
-  "author": "Sandro 'Sandroid' Ducceschi <sandro@polyend.com>",
-  "license": "MIT",
   "type": "module",
   "engines": {
     "node": ">=20.0.0"
