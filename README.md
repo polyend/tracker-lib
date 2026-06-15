@@ -43,6 +43,12 @@ Please share any and all creative uses of the library with us over at the [Polye
 
 ## Quick start
 
+Simply install via npm:
+
+```bash
+npm install tracker-lib
+```
+
 ### Working with Instruments (`.pti`)
 
 #### Reading an Instrument

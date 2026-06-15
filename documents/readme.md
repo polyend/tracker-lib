@@ -16,14 +16,11 @@ This library was possible thanks to [Polyend's](https://polyend.com) effort to [
 
 ## Installation
 
-Currently you can download the library from the [releases page](https://github.com/polyend/tracker-lib/releases). \
-We hope to have the library available on npm soon.
+Simply install via npm:
 
-<!--
 ```bash
 npm install tracker-lib
 ```
--->
 
 ## Quick Start
 
