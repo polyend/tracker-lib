@@ -19,7 +19,7 @@ This library was possible thanks to [Polyend's](https://polyend.com) effort to [
 Simply install via npm:
 
 ```bash
-npm install tracker-lib
+npm install @polyend/tracker-lib
 ```
 
 ## Quick Start
@@ -27,7 +27,7 @@ npm install tracker-lib
 ### Reading an Instrument
 
 ```typescript
-import Tracker from 'tracker-lib';
+import Tracker from '@polyend/tracker-lib';
 
 async function loadInstrument() {
   // In NodeJS, provide the file path. In the browser, provide a File object.
@@ -39,7 +39,7 @@ async function loadInstrument() {
 ### Creating and Writing a Pattern
 
 ```typescript
-import Tracker from 'tracker-lib';
+import Tracker from '@polyend/tracker-lib';
 
 // Create a new pattern with 8 tracks and 64 steps
 const pattern = Tracker.createPattern(8, 64);

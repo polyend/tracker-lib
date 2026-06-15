@@ -46,14 +46,14 @@ Please share any and all creative uses of the library with us over at the [Polye
 Simply install via npm:
 
 ```bash
-npm install tracker-lib
+npm install @polyend/tracker-lib
 ```
 
 ### Working with Instruments (`.pti`)
 
 #### Reading an Instrument
 ```typescript
-import Tracker from 'tracker-lib';
+import Tracker from '@polyend/tracker-lib';
 
 // Node.js file path or Browser File object
 const instrumentData = await Tracker.readInstrument('path/to/my-instrument.pti');
@@ -66,7 +66,7 @@ if (instrumentData) {
 
 #### Creating a New Instrument
 ```typescript
-import Tracker from 'tracker-lib';
+import Tracker from '@polyend/tracker-lib';
 
 // Load a raw WAV file as an ArrayBuffer
 const wavBuffer = await myFile.arrayBuffer();
@@ -81,7 +81,7 @@ await Tracker.writeInstrument(instrument, 'my-new-instrument.pti');
 The library includes audio utilities to parse WAV files and extract channels, sample rates, bit depth, and frames:
 
 ```typescript
-import { AudioUtil } from 'tracker-lib';
+import { AudioUtil } from '@polyend/tracker-lib';
 
 const wavInfo = AudioUtil.getWavInfo(wavBuffer);
 console.log(`Channels: ${wavInfo.numChannels}, Length (Frames): ${wavInfo.numFrames}`);

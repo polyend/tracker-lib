@@ -69,7 +69,7 @@ You can import and use it to search or inspect effects.
 
 ### Example: Searching for an effect by symbol
 ```typescript
-import { PatternFX } from 'tracker-lib';
+import { PatternFX } from '@polyend/tracker-lib';
 
 // Find the volume effect
 const volumeFX = PatternFX.find(fx => fx.symbol === 'V');
@@ -81,7 +81,7 @@ if (volumeFX) {
 
 ### Example: Setting step effects in a pattern
 ```typescript
-import Tracker, { PatternFX } from 'tracker-lib';
+import Tracker, { PatternFX } from '@polyend/tracker-lib';
 
 // Create a new pattern with 16 tracks and 64 steps
 const pattern = Tracker.createPattern(16, 64);
