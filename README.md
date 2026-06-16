@@ -4,7 +4,9 @@
 
 It provides easy-to-use utilities for manipulating Instruments (`.pti`), Patterns (`.mtp`), and Projects (`.mt`) files.
 
-This library was possible thanks to [Polyend's](https://polyend.com) effort to [document the Tracker's file format](https://github.com/polyend/TrackerFilesDocs).
+For a quickish overview, check out this youtube video:
+
+[![Watch the video](https://img.youtube.com/vi/6vzHuB2HkdE/0.jpg)](https://www.youtube.com/watch?v=6vzHuB2HkdE)
 
 ## Features
 
