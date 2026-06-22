@@ -40,7 +40,7 @@ export default class Pattern {
 
     // Skip for now
     // this.readUnused(dataView, state);
-    state.offset += 12;
+    state.offset += PatternConstants.UNUSED_SIZE;
 
     for (let i = 0; i < trackCount; i++) {
       state.pattern.tracks.push(this.readTrack(dataView, state));
@@ -66,7 +66,7 @@ export default class Pattern {
     const fileSize =
       PatternConstants.HEADER_SIZE +
       PatternConstants.PADDING_SIZE +
-      12 +
+      PatternConstants.UNUSED_SIZE +
       trackSize * trackCount +
       PatternConstants.CRC_SIZE;
 
@@ -79,7 +79,7 @@ export default class Pattern {
     offset += PatternConstants.PADDING_SIZE; // 2 bytes padding
 
     // Unused/reserved fields
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < PatternConstants.UNUSED_SIZE; i++) {
       dataView.setUint8(offset++, 0);
     }
 
