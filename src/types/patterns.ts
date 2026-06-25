@@ -258,7 +258,7 @@ export interface FXRecord {
 export const PatternConstants = {
   HEADER_SIZE: 14,
   PADDING_SIZE: 2,
-  UNUSED_SIZE: 10,
+  UNUSED_SIZE: 12,
   TRACK_COUNT_OLD: 8,
   TRACK_COUNT_OG: 12,
   TRACK_COUNT_MINI_PLUS: 16,
