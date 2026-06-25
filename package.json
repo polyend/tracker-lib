@@ -3,7 +3,7 @@
   "description": "Polyend Tracker Library",
   "author": "Sandro 'Sandroid' Ducceschi <sandro@polyend.com>",
   "license": "MIT",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/polyend/tracker-lib.git"
